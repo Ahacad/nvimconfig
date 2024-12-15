@@ -10,3 +10,5 @@ opt.shiftwidth = 4 -- size of a indent
 opt.softtabstop = 4 -- number of columns the cursor moves right when pressing tab
 opt.wrap = true -- wrap lines
 vim.cmd("set guicursor=a:block") -- always use block in typing, block is better :)
+
+vim.g.snacks_animate = false -- disable "smooth" scrolling, kind of unproductive
