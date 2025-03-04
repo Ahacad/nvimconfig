@@ -12,3 +12,5 @@ opt.wrap = true -- wrap lines
 vim.cmd("set guicursor=a:block") -- always use block in typing, block is better :)
 
 vim.g.snacks_animate = false -- disable "smooth" scrolling, kind of unproductive
+
+vim.g.python3_host_prog = '/usr/bin/python3' -- speed up python file loading, chat: https://chatgpt.com/share/67c6e7c6-cf20-800d-9b03-d03825872fa1
