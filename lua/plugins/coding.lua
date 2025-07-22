@@ -28,6 +28,9 @@ return {
   },
   -- github copilot
   {
+    "zbirenbaum/copilot.lua", enabled = false 
+  },
+  {
     "github/copilot.vim",
     config = function()
       vim.g.copilot_no_tab_map = true
