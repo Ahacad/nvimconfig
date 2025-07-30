@@ -27,17 +27,17 @@ return {
     "tpope/vim-obsession",
   },
   -- github copilot
-  {
-    "zbirenbaum/copilot.lua", enabled = false 
-  },
-  {
-    "github/copilot.vim",
-    config = function()
-      vim.g.copilot_no_tab_map = true
-      vim.api.nvim_set_keymap("i", "<CR>", "", { noremap = true, silent = true })
-      vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { noremap = true, silent = true, expr = true })
-    end,
-  },
+  -- {
+  --   "zbirenbaum/copilot.lua", enabled = false
+  -- },
+  -- {
+  --   "github/copilot.vim",
+  --   config = function()
+  --     vim.g.copilot_no_tab_map = true
+  --     vim.api.nvim_set_keymap("i", "<CR>", "", { noremap = true, silent = true })
+  --     vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { noremap = true, silent = true, expr = true })
+  --   end,
+  -- },
   -- completion settings
   {
     "hrsh7th/nvim-cmp",
