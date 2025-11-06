@@ -21,14 +21,14 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
-      -- Disable the problematic servers
       gopls = false,
       tsserver = false,
       ts_ls = false,
     },
   },
   init = function()
-    -- Remove the K mapping from LSP keymaps
-    vim.keymap.set("n", "K", "5k", { desc = "Move 5 lines up" })
+    local keys = require("lazyvim.plugins.lsp.keymaps").get()
+    -- Disable the K hover mapping in LazyVim's keymap list
+    keys[#keys + 1] = { "K", false }
   end,
 }
